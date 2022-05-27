@@ -40,7 +40,7 @@ const App = () => {
                       <>
                         <label>{v[term]}</label>
 
-                        <input type="checkbox" checked={arrFilt.every((v) => v.ch.includes(v[term]))} onChange={(e) => handleCheck(e.target.checked, v[term])} />
+                        <input type="checkbox" onChange={(e) => handleCheck(e.target.checked, v[term])} />
                       </>
                     ))}
                   </div>
